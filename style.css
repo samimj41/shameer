@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+#education:active{
+      background: red;
+  }
+.fr{
+  padding:9px 15px;
+  color: white;
+    margin-left: 20px;
+    background-color: #FC6D6D;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.9s ease 0s;
+}
+
+.fr:hover{
+  background-color: #ff2a2a;
+}
+li{
+  padding-top: 3px;
+}
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .static-txt{
+  font-size: 30px;
+  font-weight: 500;
+}
+.wrapper .dynamic-txt{
+  line-height: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+.dynamic-txt li{
+  list-style: none;
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  color: #FC6D6D;
+  animation: slide 4s steps(2) infinite;
+  
+
+}
+@keyframes slide {
+  100%
+  {
+    top: -100px;
+  }
+}
+
+.dynamic-txt li span{
+  position: relative;
+  
+
+}
+.dynamic-txt li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #252839;
+  height: 110%;
+  width: 100%;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 2s steps(10) infinite;
+  
+
+}
+@keyframes typing {
+  100%
+  {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+.rp a{
+  position: relative;
+  padding: 1 10px;
+
+}
+.rp a:hover{
+  color: #FC6D6D;
+}
+.rp a:after{
+  content: "";
+  position: absolute;
+  background-color: #FC6D6D;
+  height: 3px;
+  width: 0;
+  left: 7px;
+  bottom: -1px;
+  transition: 0.3s;;
+}
+.rp a:hover:after{
+  width: 80%;
+}
